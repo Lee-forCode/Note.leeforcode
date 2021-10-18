@@ -1,0 +1,26 @@
+# 源码包安装
+
+```
+# MySQL安装路径
+-DCMAKE_INSTALL_PREFIX=/application/mysql-5.6.50 \
+-DMYSQL_DATADIR=/application/mysql-5.6.50/data \
+-DMYSQL_UNIX_ADDR=/application/mysql-5.6.50/tmp/mysql.sock \
+-DDEFAULT_CHARSET=utf8 \
+-DDEFAULT_COLLATION=utf8_general_ci \
+-DWITH_EXTRA_CHARSETS=all \
+-DWITH_INNOBASE_STORAGE_ENGINE=1 \
+-DWITH_FEDERATED_STORAGE_ENGINE=1 \
+-DWITH_BLACKHOLE_STORAGE_ENGINE=1 \
+-DWITHOUT_EXAMPLE_STORAGE_ENGINE=1 \
+-DWITH_ZLIB=bundled \
+-DWITH_SSL=yes \
+-DENABLED_LOCAL_INFILE=1 \
+-DWITH_EMBEDDED_SERVER=1 \
+-DENABLED_DOWNLOADS=1 \
+>-DWITH_DEBUG=0
+# 安装完成后
+
+```
+
+`cmake`后的的部分截图![image-20210926111957868](C:\Users\LGB\AppData\Roaming\Typora\typora-user-images\image-20210926111957868.png)
+
